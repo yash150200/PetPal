@@ -146,7 +146,7 @@ import axios from "axios";
 import "./PetAI.css";
 
 // 🔁 Replace with your deployed backend URL
-const API_URL = "https://petpal-1-vwvb.onrender.com/api/ai";
+const API_URL = "https://petpal-2-vwvb.onrender.com/api/ai";
 
 export default function PetAI() {
   const isPremium = localStorage.getItem("petpal_premium") === "true";
