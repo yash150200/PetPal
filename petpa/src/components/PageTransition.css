@@ -1,0 +1,39 @@
+.transition-wrapper {
+  position: relative;
+  min-height: 60vh;
+}
+
+/* Loader */
+.mini-loader {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.circle {
+  width: 36px;
+  height: 36px;
+  border: 4px solid #ddd;
+  border-top: 4px solid #ff7a00;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+/* Page content animation */
+.page-content {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+}
+
+.page-content.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

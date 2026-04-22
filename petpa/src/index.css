@@ -1,0 +1,92 @@
+/* /* body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7fa;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: #ff914d;
+  color: white;
+}
+
+.navbar a {
+  margin-left: 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 10px;
+}
+
+.footer {
+  text-align: center;
+  padding: 15px;
+  background: #333;
+  color: white;
+} */
+
+ .theme-free {
+  --bg: #ffffff;
+  --card: #f9fafb;
+  --text: #111827;
+  --primary: #ff914d;
+}
+
+
+.theme-premium {
+   --bg: #020617; 
+   /* --bg: grey; */
+  --card: #020617;
+  /* --text: #e5e7eb; */
+  --text: rgb(185, 178, 134);
+  --primary: black;
+}
+
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: all 0.4s ease;
+}
+
+.card {
+  background: var(--card);
+}
+
+button {
+  background: var(--primary);
+  color: white;
+}   
+/* =========================
+   RESET & BASE
+   ========================= */
+/* =========================
+   THEME VARIABLES
+   ========================= */
+
+

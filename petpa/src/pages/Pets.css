@@ -1,0 +1,459 @@
+/* /* 
+.card-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, 220px) !important; 
+  gap: 28px !important;
+  padding: 20px !important;
+  justify-content: flex-start !important;
+}
+
+
+.card {
+  width: 220px !important;              
+  background: #ffffff !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+}
+
+.card:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.18) !important;
+}
+
+
+
+.img-box {
+  width: 100% !important;
+  height: 180px !important;             
+  overflow: hidden !important;
+  background: #f1f5f9 !important;
+  display: block !important;
+}
+
+.img-box img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;         
+  display: block !important;
+  max-width: 100% !important;
+}
+
+
+
+.card h3 {
+  font-size: 16px !important;
+  margin: 15px 14px 4px !important;
+  font-weight: 600 !important;
+  color: #111827 !important;
+}
+
+.card p {
+  font-size: 14px !important;
+  margin: 0 14px 14px !important;
+  color: #6b7280 !important;
+}
+
+
+
+@media (max-width: 600px) {
+  .card-grid {
+    grid-template-columns: repeat(auto-fill, 160px) !important;
+  }
+
+  .card {
+    width: 160px !important;
+  }
+
+  .img-box {
+    height: 150px !important;
+  }
+}
+
+
+
+.section-title {
+  margin: 30px 20px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 49x;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.price {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+button {
+  margin-top: 8px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.sold {
+  opacity: 0.5;
+}
+
+.sold-badge {
+  color: red;
+  font-weight: bold;
+}
+
+.remove-btn {
+  background: #ef4444;
+  color: white;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.payment-box {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  width: 320px;
+  text-align: center;
+}
+
+.pay-options {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0;
+}
+
+.pay-btn {
+  background: #22c55e;
+  color: white;
+  width: 100%;
+}
+
+.cancel-btn {
+  background: transparent;
+  color: red;
+  margin-top: 10px;
+}  */
+
+
+/* .card-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, 220px) !important; 
+  gap: 36px !important;                
+  padding: 30px !important;            
+  justify-content: flex-start !important;
+} */
+/* 
+.card-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 220px)) !important;
+  gap: 28px !important;          
+  padding: 20px !important;
+  justify-content: flex-start !important;
+}
+.card {
+  width: 220px !important;              
+  background: #ffffff !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+}
+
+.card:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.18) !important;
+}
+
+.img-box {
+  width: 100% !important;
+  height: 180px !important;             
+  overflow: hidden !important;
+  background: #f1f5f9 !important;
+  display: block !important;
+}
+
+.img-box img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;         
+  display: block !important;
+  max-width: 100% !important;
+}
+
+.card h3 {
+  font-size: 16px !important;
+  margin: 18px 14px 6px !important;
+  font-weight: 600 !important;
+  color: #111827 !important;
+}
+
+.card p {
+  font-size: 14px !important;
+  margin: 0 14px 16px !important;
+  color: #6b7280 !important;
+}
+
+@media (max-width: 600px) {
+  .card-grid {
+    grid-template-columns: repeat(auto-fill, 160px) !important;
+    gap: 24px !important;              
+  }
+
+  .card {
+    width: 160px !important;
+  }
+
+  .img-box {
+    height: 150px !important;
+  }
+}
+
+.section-title {
+  margin: 40px 20px;                    
+}
+
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 40px;                           
+  padding: 30px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.price {
+  font-weight: bold;
+  margin: 12px 0;
+}
+
+button {
+  margin-top: 8px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.sold {
+  opacity: 0.5;
+}
+
+.sold-badge {
+  color: red;
+  font-weight: bold;
+}
+
+.remove-btn {
+  background: #ef4444;
+  color: white;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.payment-box {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  width: 320px;
+  text-align: center;
+}
+
+.pay-options {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0;
+}
+
+.pay-btn {
+  background: #22c55e;
+  color: white;
+  width: 100%;
+}
+
+.cancel-btn {
+  background: transparent;
+  color: red;
+  margin-top: 10px;
+}  */
+
+
+
+
+ 
+.card-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 220px)) !important;
+  gap: 28px !important;
+  padding: 20px !important;
+  justify-content: flex-start !important;
+}
+
+.card {
+  width: 220px !important;
+  background: #ffffff !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  transition: transform 0.2s ease !important;
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+.card:hover {
+  transform: translateY(-4px) !important;
+}
+
+.card img {
+  width: 100% !important;
+  height: 200px !important;
+  object-fit: cover !important;
+  display: block !important;
+  backface-visibility: hidden;
+}
+
+.card h3 {
+  font-size: 16px !important;
+  margin: 15px 14px 4px !important;
+  font-weight: 600 !important;
+  color: #111827 !important;
+}
+
+.card p {
+  font-size: 14px !important;
+  margin: 0 14px 14px !important;
+  color: #6b7280 !important;
+}
+
+.price {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+button {
+  margin-top: 8px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.sold {
+  opacity: 0.5;
+}
+
+.sold-badge {
+  color: red;
+  font-weight: bold;
+}
+
+.remove-btn {
+  background: #ef4444;
+  color: white;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.payment-box {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  width: 320px;
+  text-align: center;
+}
+
+.pay-options {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0;
+}
+
+.pay-btn {
+  background: #22c55e;
+  color: white;
+  width: 100%;
+}
+
+.cancel-btn {
+  background: transparent;
+  color: red;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 160px)) !important;
+    gap: 22px !important;
+  }
+
+  .card {
+    width: 160px !important;
+  }
+
+  .card img {
+    height: 150px !important;
+  }
+}  
+
+
+
